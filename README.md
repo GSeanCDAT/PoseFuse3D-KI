@@ -25,10 +25,10 @@
         <a href="https://gseancdat.github.io/projects/PoseFuse3D_KI" target='_blank'>
         <img src="https://img.shields.io/badge/🐳-Project%20Page-blue">
         </a>
-         <a href="http://arxiv.org/" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-TBU-b31b1b.svg">
+         <a href="https://arxiv.org/abs/2506.03119" target='_blank'>
+        <img src="https://img.shields.io/badge/arXiv-2506.03119-b31b1b.svg">
         </a>
-        <img src="https://badges.pufler.dev/visits/GSeanCDAT/PoseFuse3D-KI">
+        <img src="https://api.infinitescript.com/badgen/count?name=sczhou/PoseFuse3DKI&ltext=Visitors&color=3977dd">
     </h4>
 </div>
 
