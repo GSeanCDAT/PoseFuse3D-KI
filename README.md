@@ -21,6 +21,10 @@
 </div>
 
 <div>
+    <strong>NeurIPS 2025</strong>
+</div>
+
+<div>
     <h4 align="center">
         <a href="https://gseancdat.github.io/projects/PoseFuse3D_KI" target='_blank'>
         <img src="https://img.shields.io/badge/🐳-Project%20Page-blue">
