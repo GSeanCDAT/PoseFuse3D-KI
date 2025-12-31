@@ -28,7 +28,7 @@
          <a href="https://arxiv.org/abs/2506.03119" target='_blank'>
         <img src="https://img.shields.io/badge/arXiv-2506.03119-b31b1b.svg">
         </a>
-        <img src="https://api.infinitescript.com/badgen/count?name=sczhou/PoseFuse3DKI&ltext=Visitors&color=3977dd">
+        <img src="https://api.infinitescript.com/badgen/count?name=hzxie/PoseFuse3D-KI&ltext=Visitors&color=3977dd">
     </h4>
 </div>
 
@@ -40,3 +40,95 @@ We introduce PoseFuse3D Keyframe Interpolator (<strong>PoseFuse3D-KI</strong>), 
 :open_book: For more visual results of PoseFuse3D-KI, go checkout our <a href="https://gseancdat.github.io/projects/PoseFuse3D_KI" target="_blank">project page</a>.
 
 ---
+</div>
+
+## 🚩 News
+* **2025.12.31**: 🚀 Inference code and model checkpoints are released!
+* **2025.09.17**: 🎉 **PoseFuse3D-KI** has been accepted by NeurIPS 2025!
+
+
+## ⚙️ Installation
+
+```bash
+# Create a conda environment
+conda create -n pf3d python=3.10 -y
+conda activate pf3d
+
+# Install PyTorch
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+
+## 📂 Preparation
+1.  **SMPL-X Models**: Download the [SMPL-X](https://smpl-x.is.tue.mpg.de/) body models and place them in `./data/smplx_files/smplx`.
+2.  **Checkpoints**: Download our model [checkpoints](https://entuedu-my.sharepoint.com/:u:/g/personal/zujin001_e_ntu_edu_sg/IQDGLSo4pRuxQp2TnwMG2CrkATQxOGkAvAkiTPA-Aze6UDA?e=7ClDjp) and place them in the `./ckpt` directory.
+
+The expected file structure should be as follows: 
+```text
+PoseFuse3D-KI/
+├── ckpt/ 
+│   ├── pf3d/
+│   │   ├── control_model.safetensors
+│   │   └── pytorch_lora_weights.safetensors
+│   └── pf3d_flf2v/
+│       ├── control_model.safetensors
+│       └── pytorch_lora_weights.safetensors
+├── data/
+│   └── smplx_files/
+│       └── smplx/ 
+│           ├── MANO_SMPLX_vertex_ids.pkl
+│           ├── SMPL-X__FLAME_vertex_ids.npy
+│           ├── SMPLX_NEUTRAL.pkl
+│           ├── SMPLX_to_J14.pkl
+│           ├── SMPLX_NEUTRAL.npz
+│           ├── SMPLX_MALE.npz
+│           └── SMPLX_FEMALE.npz
+```
+
+
+## 🚀 Demo
+We provide two interpolation examples in the `./examples` directory. The structure of an example is as follows:
+
+```text
+PoseFuse3D-KI/
+└── examples/
+    └── example1/
+        ├── frames/
+        │   ├── frame_0000.png      # First keyframe
+        │   └── frame_0024.png      # Last keyframe
+        ├── pose/
+        │   ├── frame_0000.png      # 2D pose guidance
+        │   └── ...
+        └── smplx_ann/              # 3D SMPL-X annotations
+            ├── img_cs/
+            ├── meta/
+            └── smplx/
+```
+
+To run the interpolation demo, use the following command:
+```bash
+# Standard interpolation
+sh demo.sh
+
+# Interpolation with FLF2V 
+sh demo_flf2v.sh
+```
+The results will be saved in `./examples/example1/output`.
+
+
+## 📝 Citation
+If you find our work useful for your research, please consider citing:
+
+```bibtex
+@inproceedings{guo2025controllable,
+    title={Controllable Human-centric Keyframe Interpolation with Generative Prior},
+    author={Guo, Zujin and Wu, Size and Cai, Zhongang and Li, Wei and Loy, Chen Change},
+    booktitle={Advances in Neural Information Processing Systems},
+    year={2025}
+}
+```
+
+

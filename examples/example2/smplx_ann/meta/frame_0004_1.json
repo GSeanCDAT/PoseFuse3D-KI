@@ -1,0 +1,24 @@
+{
+    "focal": [
+        10205.078125,
+        10205.078125
+    ],
+    "princpt": [
+        474.5,
+        273.0
+    ],
+    "bbox": [
+        278.5625,
+        11.75,
+        391.875,
+        522.5
+    ],
+    "bbox_mmdet": [
+        340.0,
+        64.0,
+        270.0,
+        419.0
+    ],
+    "bbox_id": 1,
+    "img_path": "/projects_vol/gp_slab/zujin.guo/codebase/data_proc/fcvg_test/frames/train_000008/frame_0004.png"
+}

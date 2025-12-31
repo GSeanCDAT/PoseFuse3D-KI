@@ -1,0 +1,49 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data and Checkpoints
+data/
+ckpt/
+*.pt
+*.pth
+*.safetensors
+*.npz
+*.pkl
+*.npy
+*.zip
+
+# Project specific
+itw_examples/*/output/
+empty_prompt_embedding.pt
+negative_prompt_embedding.pt
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
