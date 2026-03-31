@@ -32,7 +32,7 @@
          <a href="https://arxiv.org/abs/2506.03119" target='_blank'>
         <img src="https://img.shields.io/badge/arXiv-2506.03119-b31b1b.svg">
         </a>
-        <img src="https://api.infinitescript.com/badgen/count?name=hzxie/PoseFuse3D-KI&ltext=Visitors&color=3977dd">
+        <img src="https://komarev.com/ghpvc/?username=GSeanCDAT-PoseFuse3D-KI&label=Visitors&color=3977dd">
     </h4>
 </div>
 
@@ -47,6 +47,7 @@ We introduce PoseFuse3D Keyframe Interpolator (<strong>PoseFuse3D-KI</strong>), 
 </div>
 
 ## 🚩 News
+* **2026.03.31**: 📦 Dataset and smplx linear interpolator are released!
 * **2025.12.31**: 🚀 Inference code and model checkpoints are released!
 * **2025.09.17**: 🎉 **PoseFuse3D-KI** has been accepted by NeurIPS 2025!
 
@@ -69,6 +70,7 @@ pip install -r requirements.txt
 ## 📂 Preparation
 1.  **SMPL-X Models**: Download the [SMPL-X](https://smpl-x.is.tue.mpg.de/) body models and place them in `./data/smplx_files/smplx`.
 2.  **Checkpoints**: Download our model [checkpoints](https://entuedu-my.sharepoint.com/:u:/g/personal/zujin001_e_ntu_edu_sg/IQDGLSo4pRuxQp2TnwMG2CrkATQxOGkAvAkiTPA-Aze6UDA?e=7ClDjp) and place them in the `./ckpt` directory.
+3.  **Dataset**: See [data.md](data.md) for dataset download links, data format details, and citation guidelines.
 
 The expected file structure should be as follows: 
 ```text
